@@ -1,52 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tychodemocracy</title>
   <style>
     body {
-      background-color: #1a1a1a;
-      color: #d3d3d3;
-      font-family: Calibri, sans-serif;
       margin: 0;
       padding: 0;
+      position: relative;
+      background-color: #333; /* Dark charcoal background */
+      font-family: Calibri, sans-serif; /* Calibri font */
+      color: #ccc; /* Light grey text */
     }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    h1, h2, h3 {
-      color: #e0e0e0;
-    }
-    .content-section {
-      margin-top: 30px;
-      padding: 20px;
-      background-color: #262626;
-      border-radius: 10px;
+
+    /* Style for the PNG in the upper-right corner */
+    .corner-image {
+      position: absolute;
+      top: 10px;  /* distance from the top */
+      right: 10px; /* distance from the right */
+      width: 100px; /* adjust size as needed */
+      height: auto;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <img src="T1smal.png" alt="Corner Image" class="corner-image">
+
+  <div>
     <h1>Tychodemocracy</h1>
-    <h2>Democracy Through Random Selection</h2>
-
-    <div class="content-section">
-      <!-- PLACE YOUR TEXT HERE -->
-
-
-      <p>Your content goes here...</p>
-
-
-
-
-
-
-
-
-    </div>
+    <p>Democracy Through Random Selection</p>
   </div>
 </body>
 </html>

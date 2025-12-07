@@ -6,30 +6,41 @@
   <title>Tychodemocracy</title>
   <style>
     body {
-  margin: 0;             /* remove default margin */
-  padding: 2em;          /* adds space inside the edges (2em ≈ 2x font size) */
-  background-color: #333;
-  color: #ccc;
-  font-family: Calibri, sans-serif;
-}
+      margin: 0;
+      padding: 2em; /* space around content */
+      background-color: #333;
+      color: #ccc;
+      font-family: Calibri, sans-serif;
+    }
 
+    /* Header container */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* pushes left and right items to edges */
+      margin-bottom: 2em;
+    }
 
-    /* Style for the PNG in the upper-right corner */
-    .corner-image {
-      position: absolute;
-      top: 10px;  /* distance from the top */
-      right: 10px; /* distance from the right */
-      width: 100px; /* adjust size as needed */
+    .header img {
+      width: 100px; /* adjust size */
       height: auto;
+    }
+
+    .header h1 {
+      margin: 0;
+      text-align: center;
+      flex-grow: 1; /* takes up remaining space so title stays centered */
     }
   </style>
 </head>
 <body>
-  <img src="T1small.png" alt="Corner Image" class="corner-image">
 
-  <div>
+  <div class="header">
+    <img src="T1small.png" alt="Left Image">
     <h1>Tychodemocracy</h1>
     <h2>Democracy Through Random Selection</h2>
+    <img src="T1small.png" alt="Right Image">
+  </div>
 <br>
 <br>
     
